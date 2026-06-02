@@ -1,22 +1,32 @@
 name: CustomAlerts
 main: CustomAlerts\CustomAlerts
-version: 3.1
-api: [5.0.0]
+version: 3.1.0
+api:
+  - 5.0.0
+
 load: STARTUP
-author: [EvolSoft, KanekiLeChomeur]
-description: Customize or hide alerts (join/leave messages, whitelist messages, outdated server/client messages, etc...) plugin
-website: https://github.com/EvolSoft/CustomAlerts/
+
+author:
+  - EvolSoft
+  - KanekiLeChomeur
+
+description: Customize or hide alerts (join, quit, whitelist, outdated server/client, death messages, MOTD, and more)
+
+website: https://github.com/EvolSoft/CustomAlerts
 
 permissions:
   customalerts:
+    description: CustomAlerts permission tree
     default: op
-    description: CustomAlerts permission tree.
+
   customalerts.help:
+    description: Allows access to /calerts help
     default: op
-    description: let player read CustomAlerts commands help.
+
   customalerts.info:
+    description: Allows access to /calerts info
     default: op
-    description: Let player read info about CustomAlerts.
+
   customalerts.reload:
+    description: Allows access to /calerts reload
     default: op
-    description: Let player reload CustomAlerts configuration.
